@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>form</title>
+		<script src="main.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+
+	<body>
+	  <div class="container">
+
+	     <div class="header">
+	    	<h1 id= "form">Registration form</h1>
+	     </div>
+			 <form  name="myForm">
+				<div class="form_control">
+					First name : <input type="text" name="first_name" placeholder=" Enter First name">
+				</div>
+				<div class="form_control">
+					Last name : <input type="text" name="last_name" placeholder="Enter Last name" >
+				</div>
+				<div class="form_control" >
+					Email: <input type="Email" name="email"  placeholder="Enter  your Email" >
+				</div>
+				<div class="form_control">
+					Password: <input type="password" name="password" placeholder="Enter  Password" >
+				</div>
+				<div class="form_control">
+					Confirm Password: <input type="Password" name="c_password" placeholder="Password" >
+				</div>
+				<input type = "checkbox" required> I accept the <span>Term of use</span> & Privacy Policy
+				<div>
+					<button class= "btn" onclick="submitForm()" id="my_btn">submit</button>
+		      <div>
+      		<a class="login" href="login.html">LOGIN</a>
+       		</div>
+	      </div>
+			</form>
+		</div>
+	</body>
+</html>

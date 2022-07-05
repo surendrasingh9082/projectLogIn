@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning JavaScript</title>
+    </head>
+    <body>
+        <form > 
+            <input id="name" type="text" placeholder="Name" />
+            <input id="pw" type="password" placeholder="Password" />
+            <input id="rgstr_btn" type="submit"  onClick="store()"/> 
+        </form>
+
+        <form >
+
+            <input id="userName" type="text" placeholder="Enter Username" />
+            <input id="userPw" type="password" placeholder="Enter Password" />
+            <input id="login_btn" type="submit"  onClick="check()"/> 
+       </form>
+
+
+<script type="text/javascript"> 
+    
+var name = document.getElementById('name');
+var pw = document.getElementById('pw');
+
+
+function store() {
+    localStorage.setItem('name', name.value);
+    localStorage.setItem('pw', pw.value);
+}
+
+
+function check() {
+
+    
+    var storedName = localStorage.getItem('name');
+    var storedPw = localStorage.getItem('pw');
+
+   
+    var userName = document.getElementById('userName');
+    var userPw = document.getElementById('userPw');
+
+   
+    if(userName.value !== storedName || userPw.value !== storedPw) {
+        alert('ERROR');
+    }else {
+        alert('You are loged in.');
+    }
+}
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
